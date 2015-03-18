@@ -5,7 +5,7 @@ The DartPad UI release process:
 - the `web/app.yaml` file for `master` has the `version` set to `dev`. For technical reasons, it also needs to have the `secure: always` line commented out.
 - When we're ready to release, we merge all of master into the `prod` branch. We only release production version from this branch.
 - We verify that the `web/app.yaml` has it's version set to `prod`, and the `secure: always` line is enabled.
-- We then deploy from this branch (`grind deploy`, then a manual push to appengine).
+- We then deploy from this branch (`grind deploy`, then a manual push to appengine). At some point in the future we'll probably alternate deploy versions from `prod.a` and `prod.b`, and switch the active appengine version from the appengine management UI. This is a bit too much process for us at this stage however.
 - Between releases, if we have a critical fix, we apply the fix to the master branch. We then do a `git cherry-pick` of the commit(s) into the prod branch, and redeploy from there.
 
 This release workflow lets us continue to make forward development progress, while at the same time having a stable (and patchable) shipping prod version.
