@@ -12,6 +12,6 @@ Found at [https://gist.github.com/devoncarew/72d83fe97bfc8e735607](https://gist.
 To add multiple queries, simply separate them by the "&" (ampersand) symbol.
 
 List of Query Elements and their values:
-id (gist ID)
-verticalRatio (0 to 100) [Embed only]
-horizontalRatio(0 to 100) [Embed only]
+id (gist ID)  
+verticalRatio (0 to 100) [Embed only]  
+horizontalRatio(0 to 100) [Embed only]  
