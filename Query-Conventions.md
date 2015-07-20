@@ -1,8 +1,8 @@
 So, you want to embed a code snippet into your website? No worries, it's simple! 
 
 DartPad offers 3 different embedding choices for shared code. You have the option to show:
-1. Dart, Console, and Documentation
 
+1. Dart, Console, and Documentation
 2. Dart, Console, and Html Output (with options to modify HTML/CSS)
 3. Dart and console only
 
