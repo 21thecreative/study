@@ -5,9 +5,9 @@ A sample URL would be
 [https://dartpad.dartlang.org/embed-dart.html?id=72d83fe97bfc8e735607&verticalRatio=0.8](https://dartpad.dartlang.org/embed-dart.html?id=72d83fe97bfc8e735607&verticalRatio=0.8)
 
 In this URL, we have the query ending
-?id=72d83fe97bfc8e735607&verticalRatio=0.8 added path.
+?id=72d83fe97bfc8e735607&verticalRatio=80 added path.
 This means that our servers will show a gist with the hashed ID 72d83fe97bfc8e735607
-Found at [https://gist.github.com/devoncarew/72d83fe97bfc8e735607](https://gist.github.com/devoncarew/72d83fe97bfc8e735607), and vertical splitters with ratios of 8:2.
+Found at [https://gist.github.com/devoncarew/72d83fe97bfc8e735607](https://gist.github.com/devoncarew/72d83fe97bfc8e735607), and vertical splitters with ratios of 80%:20%.
 
 To add multiple queries, simply separate them by the "&" (ampersand) symbol.
 
