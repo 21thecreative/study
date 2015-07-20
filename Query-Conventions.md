@@ -2,7 +2,7 @@ DartPad pages use query parameters in the URL to retrieve & show certain informa
 This means that users can configure how to show their code by quickly changing the URL.
 
 A sample URL would be 
-[https://dartpad.dartlang.org/embed-dart.html?id=72d83fe97bfc8e735607&verticalRatio=0.8](https://dartpad.dartlang.org/embed-dart.html?id=72d83fe97bfc8e735607&verticalRatio=0.8)
+[https://dartpad.dartlang.org/embed-dart.html?id=72d83fe97bfc8e735607&verticalRatio=80](https://dartpad.dartlang.org/embed-dart.html?id=72d83fe97bfc8e735607&verticalRatio=80)
 
 In this URL, we have the query ending
 ?id=72d83fe97bfc8e735607&verticalRatio=80 added path.
