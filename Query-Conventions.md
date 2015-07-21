@@ -1,4 +1,4 @@
-``So, you want to embed a code snippet into your website? No worries, it's simple! 
+So, you want to embed a code snippet into your website? No worries, it's simple! 
 
 DartPad offers 3 different embedding choices for shared code. You have the option to show:
 
