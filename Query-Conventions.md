@@ -34,5 +34,4 @@ To add multiple queries, simply separate them by the "&" (ampersand) symbol.
 
 id (gist ID)  
 verticalRatio (0 to 100) [Embed only]  
-horizontalRatio(0 to 100) [Embed only]  
-<iframe src="https://www.google.com/"></iframe>
+horizontalRatio(0 to 100) [Embed only]
