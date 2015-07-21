@@ -3,9 +3,11 @@ So, you want to embed a code snippet into your website? No worries, it's simple!
 DartPad offers 3 different embedding choices for shared code. You have the option to show:
 
 1. Dart, Console, and Documentation
+![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dart.png)
 2. Dart, Console, and Html Output (with options to modify HTML/CSS)
+![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-html.png)
 3. Dart and console only
-
+![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-inline.png)
 
 DartPad pages use query parameters in the URL to retrieve & show certain information.
 This means that users can configure how to show their code by quickly changing the URL.
@@ -33,4 +35,3 @@ To add multiple queries, simply separate them by the "&" (ampersand) symbol.
 id (gist ID)  
 verticalRatio (0 to 100) [Embed only]  
 horizontalRatio(0 to 100) [Embed only]  
-
