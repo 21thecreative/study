@@ -14,10 +14,11 @@ follow the following instructions in main DartPad:
 1. Finalize any edits
 2. Click share in the top right corner
 3. Confirm the share
-![https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png)
+
 
 At this point, you will be able to get the general URL.
 
+![https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png)
 If you want to embed, click the embed button and source code for embedding options will be provided. 
 ![https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dialog.png)
 Find more information about embedding here.
