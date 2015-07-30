@@ -18,4 +18,6 @@ follow the following instructions in main DartPad:
 
 At this point, you will be able to get the general URL.
 
-If you want to embed, click the embed button and source code for embedding options will be provided. Find more information about embedding here.
+If you want to embed, click the embed button and source code for embedding options will be provided. 
+![https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dialog.png)
+Find more information about embedding here.
