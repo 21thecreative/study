@@ -18,4 +18,4 @@ follow the following instructions in main DartPad:
 
 At this point, you will be able to get the general URl.
 
-4. If you want to embed, click the embed button and source code for embedding options will be provided. Find more information about embedding here.
+If you want to embed, click the embed button and source code for embedding options will be provided. Find more information about embedding here.
