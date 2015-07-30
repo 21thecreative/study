@@ -15,6 +15,7 @@ follow the following instructions in main DartPad:
 1. Finalize any edits
 2. Click share in the top right corner
 3. Confirm the share
+![https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png)
 
 At this point, you will be able to get the general URL.
 
