@@ -21,7 +21,7 @@ It can be embedded by inserting the following code into a html document:
 
 Specify the width and the height as style parameters of the iframe:
     
-    <iframe style="width:400px;height:400px" src="https://dartpad.dartlang.org/embed-html.html&id=72d83fe97bfc8e735607&verticalRatio=80></iframe>
+    <iframe style="width:400px;height:400px;" src="https://dartpad.dartlang.org/embed-html.html&id=72d83fe97bfc8e735607&verticalRatio=80></iframe>
 
 In this URL, we have the query ending
 ?id=72d83fe97bfc8e735607&verticalRatio=80 added path.
