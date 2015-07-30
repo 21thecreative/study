@@ -1,4 +1,5 @@
 If you're here, you've probably hit the export button. 
+![https://github.com/dart-lang/dart-pad/blob/master/doc/images/export-button.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/export-button.png)
 
 
 Exporting an embedded DartPad into the main DartPad editor enables many of the sharing features.
