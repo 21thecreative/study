@@ -2,16 +2,13 @@ If you're here, you've probably hit the export button.
 
 ![https://github.com/dart-lang/dart-pad/blob/master/doc/images/export-button.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/export-button.png)
 
-
-Exporting an embedded DartPad into the main DartPad editor enables many of the sharing features.
-
-For clarification, exporting does NOT:
+Exporting allows you to edit and re-share the DartPad.For clarification, exporting does NOT:
 
 1. Create a gist
 2. Share your work
 3. Create a URL you can share
 
-Exporting allows you to edit and re-share the DartPad. In order to share or create an embedded link again,
+In order to share or create an embedded link again,
 follow the following instructions in main DartPad:
 
 1. Finalize any edits
