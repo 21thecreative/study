@@ -16,6 +16,6 @@ follow the following instructions in main DartPad:
 2. Click share in the top right corner
 3. Confirm the share
 
-At this point, you will be able to get the general URl.
+At this point, you will be able to get the general URL.
 
 If you want to embed, click the embed button and source code for embedding options will be provided. Find more information about embedding here.
