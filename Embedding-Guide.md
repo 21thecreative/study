@@ -6,7 +6,7 @@ DartPad offers 3 different embedding choices for shared code. You have the optio
 ![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dart.png)
 2. Dart, Console, and Html Output (with options to modify HTML/CSS) [embed-html]
 ![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-html.png)
-3. Dart and console only [embed-inline]
+3. Dart and Console (Minimal) [embed-inline]
 ![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-inline.png)
 
 DartPad pages use query parameters in the URL to retrieve & show certain information.
