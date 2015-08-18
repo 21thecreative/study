@@ -9,7 +9,7 @@ Exporting allows you to edit and re-share the DartPad. For clarification, export
 3. Create a URL you can share
 
 In order to share or create an embedded link again,
-follow the following instructions in main DartPad:
+complete the following instructions in main DartPad:
 
 1. Finalize any edits
 2. Click share in the top right corner
