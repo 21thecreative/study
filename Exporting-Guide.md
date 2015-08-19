@@ -16,9 +16,8 @@ complete the following instructions in main DartPad:
 3. Confirm the share
 
 
-At this point, you will be able to get the general URL.
+At this point, you will be able to get the iframe source code. The Dart documentation and Html views will be available for pre-selection. The minimal embedding is still available at embed-inline.html.
 
 ![https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/sharing-dialog.png)
-If you want to embed, click the embed button and source code for embedding options will be provided. 
-![https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dialog.png](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dialog.png)
+
 Find more information about embedding [here](https://github.com/dart-lang/dart-pad/wiki/Embedding-Guide).
