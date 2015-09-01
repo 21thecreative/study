@@ -1,10 +1,10 @@
 **List of Query Elements**
 
-id (gist ID) to load a gist ID
-line (line number) to jump to a line
-verticalRatio (0 to 100) [Embed only]  
-horizontalRatio(0 to 100) [Embed only]
-run (run = true) to autorun [Embed only]
+* id (gist ID) to load a gist ID
+* line (line number) to jump to a line
+* verticalRatio (0 to 100) [Embed only]  
+* horizontalRatio(0 to 100) [Embed only]
+* run (run = true) to autorun [Embed only]
 
 **So, you want to embed a code snippet into your website?**
 No worries, it's simple! 
