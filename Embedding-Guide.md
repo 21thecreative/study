@@ -1,3 +1,11 @@
+**List of Query Elements**
+
+id (gist ID) to load a gist ID
+line (line number) to jump to a line
+verticalRatio (0 to 100) [Embed only]  
+horizontalRatio(0 to 100) [Embed only]
+run (run = true) to autorun [Embed only]
+
 So, you want to embed a code snippet into your website? No worries, it's simple! 
 
 DartPad offers 3 different embedding choices for shared code. You have the option to show:
@@ -29,9 +37,3 @@ This means that our servers will show a gist with the hashed ID 72d83fe97bfc8e73
 Found at [https://gist.github.com/devoncarew/72d83fe97bfc8e735607](https://gist.github.com/devoncarew/72d83fe97bfc8e735607), and vertical splitters with ratios of 80%:20%.
 
 To add multiple queries, simply separate them by the "&" (ampersand) symbol.
-
-**List of Query Elements**
-
-id (gist ID)  
-verticalRatio (0 to 100) [Embed only]  
-horizontalRatio(0 to 100) [Embed only]
