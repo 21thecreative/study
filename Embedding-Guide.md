@@ -5,6 +5,9 @@
 * verticalRatio (0 to 100) [Embed only]  
 * horizontalRatio(0 to 100) [Embed only]
 * run (run = true) to autorun [Embed only]
+* strong (strong = true) to enable [strong mode][strong_mode]
+
+[strong_mode]: https://github.com/dart-lang/dev_compiler/blob/master/STRONG_MODE.md
 
 **So, you want to embed a code snippet into your website?**
 No worries, it's simple! 
