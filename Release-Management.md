@@ -17,6 +17,5 @@ This release workflow lets us continue to make forward development progress, whi
 - Validate that you're using the `dart-pad` project: `gcloud config list`
 - After following the above release process steps, `git checkout prod`
 - `grind deploy`; this will create a deployable version of the prod website in `build/web/`
-- cd `build/web/`
-- `gcloud app deploy`
-- from the App Engine cloud console, made that deployed version of the app the default
+- From the App Engine GUI app, deploy the app (from the build/web/ directory)
+- From the App Engine cloud console, made that deployed version of the app the default
