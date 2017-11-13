@@ -9,6 +9,8 @@
 
 [strong_mode]: https://github.com/dart-lang/dev_compiler/blob/master/STRONG_MODE.md
 
+Embedded views exported in strong mode will land in the main dartpad web client with strong mode enabled.
+
 **So, you want to embed a code snippet into your website?**
 No worries, it's simple! 
 
