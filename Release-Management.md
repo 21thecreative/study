@@ -2,9 +2,8 @@
 
 - We follow a normal pull request, review, merge to master github workflow.
 - New changes get batched up in master. Our CI bot runs on each PR; we maintain the master branch in an always-shipping state.
-- the `web/app.yaml` file for `master` has the `version` set to `dev`. For technical reasons, it also needs to have the `secure: always` line commented out.
 - When we're ready to release, we merge all of master into the `prod` branch. We only release production version from this branch.
-- We verify that the `web/app.yaml` has it's version set to `prod`, and the `secure: always` line is enabled. The `tool/grind.dart` `deploy` task also does verification of the branch name and `web/app.yaml` settings.
+- We verify that the `web/app.yaml` has the`secure: always` line enabled. The `tool/grind.dart` `deploy` task also does verification of the branch name and `web/app.yaml` settings.
 - We then deploy from this branch (`grind deploy`, then a manual push to appengine; see below).
 - Upstream changes to prod; `git push origin prod` or `git push upstream prod` depending on your local clone. We need to make sure to upstream changes to the prod branch so that multiple developers can release.
 
