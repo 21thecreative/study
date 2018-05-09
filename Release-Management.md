@@ -20,4 +20,4 @@ This release workflow lets us continue to make forward development progress, whi
 - `grind deploy`; this will create a deployable version of the prod website in `build/web/`
 - Deploy the app from the gcloud appengine CLI, use the no-promote flag to promote from the cloud console:
   - `gcloud app deploy build/web/app.yaml --project=dart-pad --no-promote`
-- From the App Engine cloud console - (console.cloud.google.com)[https://console.cloud.google.com/] - make that deployed version of the app the default
+- From the App Engine cloud console - [console.cloud.google.com](https://console.cloud.google.com/) - make that deployed version of the app the default
