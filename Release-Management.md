@@ -12,10 +12,7 @@ This release workflow lets us continue to make forward development progress, whi
 
 ## Pushing to App Engine
 
-- Run `gcloud config set app/promote_by_default false` (deploys need to be made default using the web UI)
-- Ensure you're using the right project: `gcloud config set project dart-pad`
-- Validate that you're using the `dart-pad` project: `gcloud config list`
 - After following the above release process steps, `git checkout prod`
 - `grind deploy`; this will create a deployable version of the prod website in `build/web/`
-- From the App Engine GUI app, deploy the app (from the build/web/ directory)
+- Deploy the app from the App engine CLI, use the no-promote flag to promote from the cloud console: `gcloud app deploy build/web/app.yaml --project=dart-pad --no-promote`
 - From the App Engine cloud console, made that deployed version of the app the default
