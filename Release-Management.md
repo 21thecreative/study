@@ -1,3 +1,5 @@
+TODO: aspects of this page are out-of-date - we should update
+
 ## The DartPad UI release process
 
 - We follow a normal pull request, review, merge to master github workflow.
