@@ -5,10 +5,10 @@ No worries, it's simple!
 
 DartPad offers 4 different embedding choices for shared code. You have the option to show:
 
-1. Dart and console [embed-dart.html](#embed-dart.html)
-3. Dart and console (minimal) [embed-inline](#embed-inline.html)
-3. Flutter, console, and HTML output [embed-flutter](#embed-flutter.html)
-4. Dart, console, and HTML output (with options to modify HTML/CSS) [embed-html](#embed-html.html)
+1. Dart and console [embed-dart.html](#embed-darthtml)
+3. Dart and console (minimal) [embed-inline](#embed-inlinehtml)
+3. Flutter, console, and HTML output [embed-flutter](#embed-flutterhtml)
+4. Dart, console, and HTML output (with options to modify HTML/CSS) [embed-html](#embed-htmlhtml)
 
 DartPad pages use query parameters in the URL to retrieve & show certain information.
 This means that users can configure how to show their code by quickly changing the URL.
