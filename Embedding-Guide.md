@@ -1,75 +1,49 @@
-# Original Embedding UI
-
-**List of Query Elements**
-
-* id (gist ID) to load a gist ID
-* line (line number) to jump to a line
-* verticalRatio (0 to 100) [Embed only]  
-* horizontalRatio(0 to 100) [Embed only]
-* run (run = true) to autorun [Embed only]
-* strong (strong = false) to disable [strong mode][strong_mode] (enabled by default)
-
-[strong_mode]: https://github.com/dart-lang/dev_compiler/blob/master/STRONG_MODE.md
-
-Embedded views exported in strong mode will land in the main dartpad web client with strong mode enabled.
+### Embedding Snippets
 
 **So, you want to embed a code snippet into your website?**
 No worries, it's simple! 
 
-DartPad offers 3 different embedding choices for shared code. You have the option to show:
+DartPad offers 4 different embedding choices for shared code. You have the option to show:
 
-1. Dart, Console, and Documentation [embed-dart]
-![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-dart.png)
-2. Dart, Console, and Html Output (with options to modify HTML/CSS) [embed-html]
-![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-html.png)
-3. Dart and Console (Minimal) [embed-inline]
-![](https://github.com/dart-lang/dart-pad/blob/master/doc/images/embed-inline.png)
+1. Dart and console [embed-dart.html](#embed-dart.html)
+3. Dart and console (minimal) [embed-inline](#embed-inline.html)
+3. Flutter, console, and HTML output [embed-flutter](#embed-flutter.html)
+4. Dart, console, and HTML output (with options to modify HTML/CSS) [embed-html](#embed-html.html)
 
 DartPad pages use query parameters in the URL to retrieve & show certain information.
 This means that users can configure how to show their code by quickly changing the URL.
 
 A sample URL would be 
-[https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&verticalRatio=60](https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&verticalRatio=60)
+[https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark](https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark)
 
 It can be embedded by inserting the following code into a html document:
     
-    <iframe src="https://dartpad.dev/embed-html.html?id=72d83fe97bfc8e735607&verticalRatio=80></iframe>
+    <iframe src="https://dartpad.dev/embed-html.html?id=72d83fe97bfc8e735607&split=80&theme=dark></iframe>
 
 Specify the width and the height as style parameters of the iframe:
     
-    <iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-html.html&id=72d83fe97bfc8e735607&verticalRatio=80></iframe>
+    <iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-html.html&id=72d83fe97bfc8e735607&split=80&theme=dark></iframe>
 
 In this URL, we have the query ending
-?id=72d83fe97bfc8e735607&verticalRatio=80 added path.
-This means that our servers will show a gist with the hashed ID 72d83fe97bfc8e735607
+`?id=72d83fe97bfc8e735607&split=80` added path.
+This means that our servers will show a gist with the hashed ID `72d83fe97bfc8e735607`
 Found at [https://gist.github.com/devoncarew/72d83fe97bfc8e735607](https://gist.github.com/devoncarew/72d83fe97bfc8e735607), and vertical splitters with ratios of 80%:20%.
 
-To add multiple queries, simply separate them by the "&" (ampersand) symbol.
+To add multiple query parameters, simply separate them by the "&" (ampersand) symbol.
 
-# Experimental Embedding UI
-
-DartPad also offers a newer, experimental UI with which we intend to replace the existing embed UI.
-It offers an updated look and two important capabilities:
-
-* Integration with Flutter for web
-* The ability to test a user's code.
-
-Just like the original UI, the experimental one can be added to a page via an iframe.
-Three different layouts are available, and they can be accessed via different HTML files in the `/experimental` directory:
-
-#### embed-new-dart.html
+#### embed-dart.html
 
 A simple interface for Dart code that includes an editor and console on the righthand side.
 
 <img width="945" alt="Screen Shot 2019-07-25 at 1 39 21 PM" src="https://user-images.githubusercontent.com/969662/61907271-01599200-aee2-11e9-9c68-4b874f8937e1.png">
 
-#### embed-new-inline.html
+#### embed-inline.html
 
 Another simple interface for Dart code with a console beneath the editor.
 
 <img width="942" alt="Screen Shot 2019-07-25 at 9 41 17 PM" src="https://user-images.githubusercontent.com/969662/61926324-fecc5c00-af24-11e9-9971-9de427699dcb.png">
 
-#### embed-new-flutter.html
+#### embed-flutter.html
 
 A layout for editing and running Flutter code. When this layout is used, code is
 compiled with DDC rather than dart2js, and the Flutter for web packages are available
@@ -77,7 +51,7 @@ for import.
 
 <img width="948" alt="Screen Shot 2019-07-25 at 1 39 36 PM" src="https://user-images.githubusercontent.com/969662/61907277-03235580-aee2-11e9-8940-082322197791.png">
 
-#### embed-new-html.html
+#### embed-html.html
 
 A layout for editing `dart:html` projects. Editors for HTML, CSS, and Dart are included,
 and HTML output is displayed to the right.
@@ -94,6 +68,8 @@ The experimental embed UI looks for these parameters in its query string:
 * **id**: ID of a GitHub gist to load into the editor
 * **split**: Percentage of the iframe width to use for the editor (the rest may be used by the console or Flutter/HTML output).
 * **theme**: Set this to 'dark' to use the dark theme (seen in the first screenshot above).
+
+Embedded views exported in strong mode will land in the main dartpad web client with strong mode enabled.
 
 ### Styling the editor
 
