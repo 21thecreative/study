@@ -1,4 +1,4 @@
-### Embedding Snippets
+## Embedding Snippets
 
 **So, you want to embed a code snippet into your website?**
 No worries, it's simple! 
@@ -14,70 +14,85 @@ DartPad pages use query parameters in the URL to retrieve & show certain informa
 This means that users can configure how to show their code by quickly changing the URL.
 
 A sample URL would be 
-[https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark](https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark)
+https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark
 
 It can be embedded by inserting the following code into a html document:
     
-    <iframe src="https://dartpad.dev/embed-html.html?id=72d83fe97bfc8e735607&split=80&theme=dark></iframe>
+```html
+<iframe src="https://dartpad.dev/embed-html.html?id=72d83fe97bfc8e735607&split=80&theme=dark></iframe>
+```
 
 Specify the width and the height as style parameters of the iframe:
     
-    <iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-html.html&id=72d83fe97bfc8e735607&split=80&theme=dark></iframe>
+```
+<iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-html.html&id=72d83fe97bfc8e735607&split=80&theme=dark></iframe>
+```
 
-In this URL, we have the query ending
-`?id=72d83fe97bfc8e735607&split=80` added path.
-This means that our servers will show a gist with the hashed ID `72d83fe97bfc8e735607`
-Found at [https://gist.github.com/devoncarew/72d83fe97bfc8e735607](https://gist.github.com/devoncarew/72d83fe97bfc8e735607), and vertical splitters with ratios of 80%:20%.
+In this URL, we have the query ending `?id=72d83fe97bfc8e735607&split=80` added
+path. This means that our servers will show a gist with the hashed ID
+`72d83fe97bfc8e735607` Found at
+https://gist.github.com/devoncarew/72d83fe97bfc8e735607, and vertical splitters
+with ratios of 80%:20%.
 
-To add multiple query parameters, simply separate them by the "&" (ampersand) symbol.
+To add multiple query parameters, simply separate them by the "&" (ampersand)
+symbol.
 
-#### embed-dart.html
+### embed-dart.html
 
-A simple interface for Dart code that includes an editor and console on the righthand side.
+A simple interface for Dart code that includes an editor and console on the
+right-hand side.
 
-<img width="945" alt="Screen Shot 2019-07-25 at 1 39 21 PM" src="https://user-images.githubusercontent.com/969662/61907271-01599200-aee2-11e9-9c68-4b874f8937e1.png">
+![Dart screenshot](https://user-images.githubusercontent.com/969662/61907271-01599200-aee2-11e9-9c68-4b874f8937e1.png)
 
-#### embed-inline.html
+### embed-inline.html
 
 Another simple interface for Dart code with a console beneath the editor.
 
-<img width="942" alt="Screen Shot 2019-07-25 at 9 41 17 PM" src="https://user-images.githubusercontent.com/969662/61926324-fecc5c00-af24-11e9-9971-9de427699dcb.png">
+![Inline screenshot](https://user-images.githubusercontent.com/969662/61926324-fecc5c00-af24-11e9-9971-9de427699dcb.png)
 
-#### embed-flutter.html
+### embed-flutter.html
 
 A layout for editing and running Flutter code. When this layout is used, code is
-compiled with DDC rather than dart2js, and the Flutter for web packages are available
-for import.
+compiled with DDC rather than dart2js, and the Flutter for web packages are
+available for import.
 
-<img width="948" alt="Screen Shot 2019-07-25 at 1 39 36 PM" src="https://user-images.githubusercontent.com/969662/61907277-03235580-aee2-11e9-8940-082322197791.png">
+![Flutter screenshot](https://user-images.githubusercontent.com/969662/61907277-03235580-aee2-11e9-8940-082322197791.png)
 
-#### embed-html.html
+### embed-html.html
 
-A layout for editing `dart:html` projects. Editors for HTML, CSS, and Dart are included,
-and HTML output is displayed to the right.
+A layout for editing `dart:html` projects. Editors for HTML, CSS, and Dart are
+included, and HTML output is displayed to the right.
 
-<img width="949" alt="Screen Shot 2019-07-25 at 1 41 10 PM" src="https://user-images.githubusercontent.com/969662/61907279-04ed1900-aee2-11e9-933e-d8552663b0ed.png">
+![HTML screenshot](https://user-images.githubusercontent.com/969662/61907279-04ed1900-aee2-11e9-933e-d8552663b0ed.png)
 
-See the experimental embeddings [demo page](https://dartpad.dev/experimental/new_embeddings_demo.html) for 
-live examples of each format.
+See the experimental embeddings [demo page][] for live examples of each format.
 
-### List of query elements
+## List of query elements
 
 The experimental embed UI looks for these parameters in its query string:
 
-* **id**: ID of a GitHub gist to load into the editor
-* **split**: Percentage of the iframe width to use for the editor (the rest may be used by the console or Flutter/HTML output).
-* **theme**: Set this to 'dark' to use the dark theme (seen in the first screenshot above).
+- **id**: ID of a GitHub gist to load into the editor
+- **split**: Percentage of the iframe width to use for the editor (the rest may
+be used by the console or Flutter/HTML output).
+- **theme**: Set this to 'dark' to use the dark theme (seen in the first
+screenshot above).
 
 Embedded views exported in strong mode will land in the main dartpad web client with strong mode enabled.
 
-### Styling the editor
+## Styling the editor
 
-Right now, the embedded editor will style its own contents according to the desired theme (either light or dark). No border is added to the iframe contents by DartPad, nor does it attempt to size itself. Developers adding DartPad iframes to their pages should use CSS within their own pages to style these properties.
+Right now, the embedded editor will style its own contents according to the
+desired theme (either light or dark). No border is added to the iframe contents
+by DartPad, nor does it attempt to size itself. Developers adding DartPad
+iframes to their pages should use CSS within their own pages to style these
+properties.
 
-### Testing the user's code
+## Testing the user's code
 
-In addition to running code and displaying the output, the new embed UI can present exercises to be completed by the user and then test their responses. It does this by combining the user's code with additional "test" code provided by the exercise author and executing the result as if it were a single file. 
+In addition to running code and displaying the output, the new embed UI can
+present exercises to be completed by the user and then test their responses. It
+does this by combining the user's code with additional "test" code provided by
+the exercise author and executing the result as if it were a single file.
 
 An example exercise might look like this:
 
@@ -109,14 +124,104 @@ void main() {
 }
 ```
 
-When combined and executed, the `main` method present in the test code runs, calls into the user's code, and validates the result. The `_result` function is provided by DartPad in the scope in which the test code executes and can be used to report the result of a test. It takes a single boolean indicating success or failure, and a list of strings to be displayed to the user with the result.
+When combined and executed, the `main` method present in the test code runs,
+calls into the user's code, and validates the result. The `_result` function is
+provided by DartPad in the scope in which the test code executes and can be used
+to report the result of a test. It takes a single boolean indicating success or
+failure, and a list of strings to be displayed to the user with the result.
 
-### Testing the user's code
+## Testing the user's code
 
-GitHub gists can be loaded into the new embed UI automatically by appending `id=[Gist ID]` to the end of the query string. The embed will look for the following files within a gist:
+GitHub gists can be loaded into the new embed UI automatically by appending
+`id=[Gist ID]` to the end of the query string. The embed will look for the
+following files within a gist:
 
-* **main.dart**: The starting state for the user's code (an unfinished method, for example).
-* **test.dart**: A `main` that will test the above code, along with any classes, functions, constants, etc. that will be used in the process.
-* **solution.dart**: The ideal solution to the exercise (i.e. what main.dart would look like after being successfully completed by the user).
-* **hint.txt**: A text hint that can be displayed to the user when requested, and which will help them complete the exercise ("Try X or Y," "Have you considered Z," etc.).
+- **main.dart**: The starting state for the user's code (an unfinished method,
+for example).
+- **test.dart**: A `main` that will test the above code, along with any classes,
+functions, constants, etc. that will be used in the process.
+- **solution.dart**: The ideal solution to the exercise (i.e. what main.dart
+would look like after being successfully completed by the user).
+- **hint.txt**: A text hint that can be displayed to the user when requested,
+and which will help them complete the exercise ("Try X or Y," "Have you
+considered Z," etc.).
  
+# Converting code blocks to DartPad
+DartPad can also "inject" itself into a web page by replacing code blocks.
+
+## Using
+
+### Step 1: Include the script
+Include `https://dartpad.dev/experimental/inject_embed.dart.js` into your page:
+
+```html
+<script type="text/javascript" src="https://dartpad.dev/experimental/inject_embed.dart.js"></script>
+```
+
+Alternatively, if you are using Jekyll, use the `js:` field at the top of the
+article:
+
+```
+title: "Codelab: using DartPad"
+js: [{defer: true, url: https://dartpad.dev/experimental/inject_embed.dart.js}]
+```
+
+### Step 2: Add a code snippet
+
+In Markdown:
+
+````
+```run-dartpad:theme-light:mode-flutter
+main() => print("Hello, World!");
+```
+````
+
+In HTML, use `<pre>` and `<code>` tags:
+
+```
+<pre>
+    <code class="language-run-dartpad:theme-light:mode-flutter">
+        main() => print("Hello, World!");
+    </code>
+</pre>
+```
+
+## Options
+
+The Markdown [info string][] must be `run-dartpad` followed by options separated
+by `:`. The following options are supported:
+
+Theme options:
+- `theme-light` (default)
+- `theme-dark`
+
+Mode options:
+- `mode-dart` (default)
+- `mode-flutter`
+- `mode-html`
+- `mode-inline`
+
+## Example
+
+An example is provided in `web/experimental/new_embeddings_with_code_tags.html`
+and can be viewed [here][embeddings demo].
+
+## Motivation
+DartPad typically uses GitHub Gists to display code snippets. For example, to
+add DartPad to a page, you can add an `iframe` with the URL to DartPad:
+
+```
+<iframe src="https://dartpad.dev/experimental/embed-new-flutter.html?id=<GIST_ID>"></iframe>
+```
+
+However, storing code in GitHub Gists is not always desirable:
+
+- Gist changes happen in a different repository with a different commit history.
+- Gists only have one owner, and can't take advantage of collaboration features
+of a repo
+- In an article or codelab, gists are opaque to the writer and more difficult to
+edit than inline snippets
+  
+[demo page]: https://dartpad.dev/experimental/new_embeddings_demo.html
+[info string]: https://spec.commonmark.org/0.29/#info-string
+[embeddings demo]: https://dartpad.dev/experimental/new_embeddings_with_code_tags.html
