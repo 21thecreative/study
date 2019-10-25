@@ -67,7 +67,7 @@ included, and HTML output is displayed to the right.
 
 See the experimental embeddings [demo page][] for live examples of each format.
 
-## List of query elements
+## List of query parameters
 
 The experimental embed UI looks for these parameters in its query string:
 
@@ -76,6 +76,7 @@ The experimental embed UI looks for these parameters in its query string:
 be used by the console or Flutter/HTML output).
 - **theme**: Set this to 'dark' to use the dark theme (seen in the first
 screenshot above).
+- **run**: Set this to 'true' to auto-run the sample when DartPad starts up.
 
 Embedded views exported in strong mode will land in the main dartpad web client with strong mode enabled.
 
@@ -171,7 +172,7 @@ js: [{defer: true, url: https://dartpad.dev/experimental/inject_embed.dart.js}]
 In Markdown:
 
 ````
-```run-dartpad:theme-light:mode-flutter
+```run-dartpad:theme-light:mode-flutter:run-true
 main() => print("Hello, World!");
 ```
 ````
@@ -200,6 +201,10 @@ Mode options:
 - `mode-flutter`
 - `mode-html`
 - `mode-inline`
+
+Auto run:
+- `run-true`
+- `run-false` (default)
 
 ## Example
 
