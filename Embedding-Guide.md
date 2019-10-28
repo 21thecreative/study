@@ -208,8 +208,8 @@ Auto run:
 
 ## Example
 
-An example is provided in `web/experimental/new_embeddings_with_code_tags.html`
-and can be viewed [here][embeddings demo].
+An example is provided in `web/experimental/inject_demo.html` and can be viewed
+[here][embeddings demo].
 
 ## Motivation
 DartPad typically uses GitHub Gists to display code snippets. For example, to
@@ -229,4 +229,4 @@ edit than inline snippets
   
 [demo page]: https://dartpad.dev/experimental/new_embeddings_demo.html
 [info string]: https://spec.commonmark.org/0.29/#info-string
-[embeddings demo]: https://dartpad.dev/experimental/new_embeddings_with_code_tags.html
+[embeddings demo]: https://dartpad.dev/experimental/inject_demo.html
