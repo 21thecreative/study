@@ -69,16 +69,21 @@ See the experimental embeddings [demo page][] for live examples of each format.
 
 ## List of query parameters
 
-The experimental embed UI looks for these parameters in its query string:
+The embed UI looks for these parameters in its query string:
 
-- **id**: ID of a GitHub gist to load into the editor
 - **split**: Percentage of the iframe width to use for the editor (the rest may
 be used by the console or Flutter/HTML output).
 - **theme**: Set this to 'dark' to use the dark theme (seen in the first
 screenshot above).
 - **run**: Set this to 'true' to auto-run the sample when DartPad starts up.
+- **id**: ID of a GitHub gist to load into the editor
+- **sample_id**: ID of an API Doc sample to load into the editor (see https://api.flutter.com/snippets/index.json for a list)
 
-Embedded views exported in strong mode will land in the main dartpad web client with strong mode enabled.
+These parameters are used together when loading a sample directly from a GitHub repo:
+- **gh_owner**: Owner of the GitHub account.
+- **gh_repo**: Name of the repo within the above account.
+- **gh_path**: Path to a `dart-pad-metadata.yaml` file within the repo.
+- **gh_ref**: (optional) Branch to use when loading the file. Defaults to `master`.
 
 ## Styling the editor
 
