@@ -77,7 +77,7 @@ be used by the console or Flutter/HTML output).
 screenshot above).
 - **run**: Set this to 'true' to auto-run the sample when DartPad starts up.
 - **id**: ID of a GitHub gist to load into the editor
-- **sample_id**: ID of an API Doc sample to load into the editor (see https://api.flutter.com/snippets/index.json for a list)
+- **sample_id**: ID of an API Doc sample to load into the editor (see https://api.flutter.dev/snippets/index.json for a list)
 
 These parameters are used together when loading a sample directly from a GitHub repo:
 - **gh_owner**: Owner of the GitHub account.
