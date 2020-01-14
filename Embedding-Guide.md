@@ -160,16 +160,20 @@ void main() {
 }
 ```
 
-When combined and executed, the `main` method present in the test code runs,
+When combined and executed, the `main` function in the test code runs,
 calls into the user's code, and validates the result. The `_result` function is
 provided by DartPad in the scope in which the test code executes and can be used
 to report the result of a test. It takes a single boolean indicating success or
 failure, and a list of strings to be displayed to the user with the result.
 
-# Converting code blocks to DartPad
-DartPad can also "inject" itself into a web page by replacing code blocks.
+> **Tip:**
+> To work on the test code locally (in an IDE, for example),
+> create a Dart file that contains everything in main.dart (or solution.dart) and test.dart,
+> and then add a [mock _result() function](https://gist.github.com/legalcodes/9fbfea4739aa064455e836dbc84cc62f).
 
-## Using
+## Converting code blocks to DartPad
+
+DartPad can "inject" itself into a web page by replacing code blocks.
 
 ### Step 1: Include the script
 Include `https://dartpad.dev/experimental/inject_embed.dart.js` into your page:
@@ -206,7 +210,7 @@ In HTML, use `<pre>` and `<code>` tags:
 </pre>
 ```
 
-## Options
+### Options
 
 The Markdown [info string][] must be `run-dartpad` followed by options separated
 by `:`. The following options are supported:
