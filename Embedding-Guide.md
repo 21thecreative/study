@@ -204,7 +204,7 @@ In HTML, use `<pre>` and `<code>` tags:
 
 ```
 <pre>
-    <code class="language-run-dartpad:theme-light:mode-flutter">
+    <code class="language-run-dartpad:theme-light:mode-flutter:ga_id-example1">
         main() => print("Hello, World!");
     </code>
 </pre>
@@ -228,6 +228,9 @@ Mode options:
 Auto run:
 - `run-true`
 - `run-false` (default)
+
+Google analytics ID, used to identify separate samples in an article or codelab:
+- `ga_id-myCustomID123`
 
 ## Example
 
