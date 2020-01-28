@@ -1,5 +1,7 @@
-Welcome to the `dartpad_ui` wiki!
+Welcome to the DarPad wiki!
 
-See:
+Some handy guides:
 
-- [Release Management](https://github.com/dart-lang/dart-pad/wiki/Release-Management)
+- [Sharing Guide](https://github.com/dart-lang/dart-pad/wiki/Sharing-Guide)
+- [Embedding Guide](https://github.com/dart-lang/dart-pad/wiki/Embedding-Guide)
+
