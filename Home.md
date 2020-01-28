@@ -1,4 +1,4 @@
-Welcome to the DarPad wiki!
+Welcome to the DartPad wiki!
 
 Some handy guides:
 
