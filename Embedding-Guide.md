@@ -177,10 +177,10 @@ failure, and a list of strings to be displayed to the user with the result.
 DartPad can "inject" itself into a web page by replacing code blocks.
 
 ### Step 1: Include the script
-Include `https://dartpad.dev/experimental/inject_embed.dart.js` into your page:
+Include `https://dartpad.dev/inject_embed.dart.js` into your page:
 
 ```html
-<script type="text/javascript" src="https://dartpad.dev/experimental/inject_embed.dart.js"></script>
+<script type="text/javascript" src="https://dartpad.dev/inject_embed.dart.js"></script>
 ```
 
 Alternatively, if you are using Jekyll, use the `js:` field at the top of the
@@ -188,7 +188,7 @@ article:
 
 ```
 title: "Codelab: using DartPad"
-js: [{defer: true, url: https://dartpad.dev/experimental/inject_embed.dart.js}]
+js: [{defer: true, url: https://dartpad.dev/inject_embed.dart.js}]
 ```
 
 ### Step 2: Add a code snippet
@@ -235,7 +235,7 @@ Google analytics ID, used to identify separate samples in an article or codelab:
 
 ## Example
 
-An example is provided in `web/experimental/inject_demo.html` and can be viewed
+An example is provided in `web/example/inject.html` and can be viewed
 [here][embeddings demo].
 
 ## Motivation
@@ -243,7 +243,7 @@ DartPad typically uses GitHub Gists to display code snippets. For example, to
 add DartPad to a page, you can add an `iframe` with the URL to DartPad:
 
 ```
-<iframe src="https://dartpad.dev/experimental/embed-new-flutter.html?id=<GIST_ID>"></iframe>
+<iframe src="https://dartpad.dev/embed-flutter.html?id=<GIST_ID>"></iframe>
 ```
 
 However, storing code in GitHub Gists is not always desirable:
@@ -255,4 +255,4 @@ of a repo
 edit than inline snippets
   
 [info string]: https://spec.commonmark.org/0.29/#info-string
-[embeddings demo]: https://dartpad.dev/experimental/inject_demo.html
+[embeddings demo]: https://dartpad.dev/example/inject.html
