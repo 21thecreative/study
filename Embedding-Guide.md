@@ -233,7 +233,7 @@ Auto run:
 Google analytics ID, used to identify separate samples in an article or codelab:
 - `ga_id-myCustomID123`
 
-## Example
+### Example
 
 An example is provided in `web/example/inject.html` and can be viewed
 [here][embeddings demo].
@@ -253,6 +253,22 @@ However, storing code in GitHub Gists is not always desirable:
 of a repo
 - In an article or codelab, gists are opaque to the writer and more difficult to
 edit than inline snippets
-  
+
+## Setting the ga_id parameter
+
+To give a meaningful name to snippets, you can assign a `ga_id` parameter:
+
+```
+<iframe src="embed-flutter.html?theme=dark&run=false&split=false&ga_id=example1"></iframe>
+```
+
+Alternatively, using the inject script will send a virtual pageview with this query paramter to GA:
+
+```
+    <pre>
+        <code class="language-run-dartpad:theme-dark:mode-flutter:ga_id-example1">foo</code>
+    </pre>
+```
+
 [info string]: https://spec.commonmark.org/0.29/#info-string
 [embeddings demo]: https://dartpad.dev/example/inject.html
