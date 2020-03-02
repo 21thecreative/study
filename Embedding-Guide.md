@@ -113,7 +113,7 @@ screenshot above).
 The following parameters are used together when loading a sample directly from a GitHub repo:
 - **gh_owner**: Owner of the GitHub account.
 - **gh_repo**: Name of the repo within the above account.
-- **gh_path**: Path to a `dart-pad-metadata.yaml` file within the repo.
+- **gh_path**: Path to a `dartpad_metadata.yaml` file within the repo.
 - **gh_ref**: (optional) Branch to use when loading the file. Defaults to `master`.
 
 ## Styling the editor
