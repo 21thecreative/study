@@ -19,7 +19,7 @@ visit the [async-await codelab](https://dart.dev/codelabs/async-await).
 Here's an example of code that embeds a simple example in a web page:
 
 ```html
-<iframe src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88></iframe>
+<iframe src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88"></iframe>
 ```
 
 That code embeds a DartPad containing the source code at http://gist.github.com/5d70bc1889d055c7a18d35d77874af88.
@@ -28,13 +28,13 @@ To customize the look of the embedded DartPad, you can add
 [query parameters](#query-parameters) like `split` and `theme`:
 
 ```html
-<iframe src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark></iframe>
+<iframe src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark"></iframe>
 ```
 
 Specify the width and the height as style parameters of the iframe:
     
 ```
-<iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark></iframe>
+<iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark"></iframe>
 ```
 
 Which [embed URL](#embedding-choices) you should use depends on how you want DartPad
@@ -243,7 +243,7 @@ DartPad typically uses GitHub Gists to display code snippets. For example, to
 add DartPad to a page, you can add an `iframe` with the URL to DartPad:
 
 ```
-<iframe src="https://dartpad.dev/embed-flutter.html?id=<GIST_ID>"></iframe>
+<iframe src="https://dartpad.dev/embed-flutter.html?id=[GIST_ID]"></iframe>
 ```
 
 However, storing code in GitHub Gists is not always desirable:
