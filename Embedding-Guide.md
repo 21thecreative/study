@@ -188,7 +188,9 @@ article:
 
 ```
 title: "Codelab: using DartPad"
-js: [{defer: true, url: https://dartpad.dev/inject_embed.dart.js}]
+js: 
+  - defer: true
+    url: https://dartpad.dev/experimental/inject_embed.dart.js
 ```
 
 ### Step 2: Add a code snippet
