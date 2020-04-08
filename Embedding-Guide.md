@@ -232,6 +232,9 @@ Auto run:
 - `run-true`
 - `run-false` (default)
 
+Split:
+- `split-70`
+
 Google analytics ID, used to identify separate samples in an article or codelab:
 - `ga_id-myCustomID123`
 
