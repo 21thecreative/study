@@ -195,6 +195,9 @@ js:
 
 ### Step 2: Add a code snippet
 
+> **Important:** You should always [sanitize code snippets](https://stackoverflow.com/questions/1273145/what-do-i-need-to-escape-inside-the-html-pre-tag) to escape HTML characters. 
+If you are using a site generator or a markdown library, these tags will be sanitized automatically.
+
 In Markdown:
 
 ````
@@ -208,7 +211,7 @@ In HTML, use `<pre>` and `<code>` tags:
 ```
 <pre>
     <code class="language-run-dartpad:theme-light:mode-flutter:ga_id-example1">
-        main() => print("Hello, World!");
+        main() =&gt; print(&quot;Hello, World!&quot;);
     </code>
 </pre>
 ```
