@@ -177,10 +177,10 @@ failure, and a list of strings to be displayed to the user with the result.
 DartPad can "inject" itself into a web page by replacing code blocks.
 
 ### Step 1: Include the script
-Include `https://dartpad.dev/inject_embed.dart.js` into your page:
+Include `https://dartpad.dev/inject_embed.dart.js` into your page with the `defer` attribute:
 
 ```html
-<script type="text/javascript" src="https://dartpad.dev/inject_embed.dart.js"></script>
+<script type="text/javascript" src="https://dartpad.dev/inject_embed.dart.js" defer></script>
 ```
 
 Alternatively, if you are using Jekyll, use the `js:` field at the top of the
