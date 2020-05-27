@@ -216,6 +216,35 @@ In HTML, use `<pre>` and `<code>` tags:
 </pre>
 ```
 
+### Step 3 (optional): Add optional files
+
+To provide virtual files for test, solution, or hint code, add the following before and after each virtual file:
+
+```
+{$ begin filename.dart $}
+...
+{$ end filename.dart $}
+```
+
+For example, to specify the main, test, solution, and hint content, you can have this:
+
+````
+```run-dartpad:theme-light:mode-flutter:run-true
+{$ begin main.dart $}
+main() => print("Hello, World!");
+{$ end main.dart $}
+{$ begin solution.dart $}
+...solution goes here
+{$ end solution.dart $}
+{$ begin test.dart $}
+...test code goes here
+{$ end test.dart $}
+{$ begin hint.txt $}
+...hint text goes here
+{$ end hint.txt $}
+```
+````
+
 ### Options
 
 The Markdown [info string][] must be `run-dartpad` followed by options separated
