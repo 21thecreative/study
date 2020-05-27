@@ -272,8 +272,8 @@ Google analytics ID, used to identify separate samples in an article or codelab:
 
 ### Example
 
-An example is provided in `web/example/inject.html` and can be viewed
-[here][embeddings demo].
+An example is provided in `web/example/inject.html` and can be viewed in the
+[embeddings demo][].
 
 ### Motivation
 DartPad typically uses GitHub Gists to display code snippets. For example, to
